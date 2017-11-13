@@ -36,7 +36,7 @@ public class UpdateItemController {
     }
     
     @RequestMapping(method = RequestMethod.POST)
-    public String submitAdd(@Valid FoodModel foodModel,Map model){
+    public String submitAdd(@Valid FoodModel foodModel, Map model){
         foodModel = (FoodModel) model.get("foodModel");
         manager.updateFoodData(foodModel);
         return "home"; //redirect to index

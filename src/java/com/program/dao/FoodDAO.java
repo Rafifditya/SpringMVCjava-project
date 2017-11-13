@@ -40,7 +40,7 @@ public class FoodDAO {
 
         try {
             connection.close();
-        } catch (SQLException e) {
+        } catch (Exception e) {
             isSuccess = false;
         }
 
